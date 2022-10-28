@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Replacement</title>
+</head>
+<style>
+    .A {
+        height: 300px;
+    }
+    .a {
+        float: left;
+        height: 200px;
+    }
+    .b {
+        float: right;
+        height: 200px;
+    }
+    .c {
+        float: left ;
+        height: auto;
+    }
+    nav {
+        height: 82px;
+        width: 100%;
+        background-image: url("pr5.jpg");
+        background-repeat: no-repeat;
+    }
+    nav ul {
+        float:right;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+    nav ul li a {
+        position: relative;
+        font-size: 18px;
+    }
+    nav ul li a:before {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+    }
+    body {
+        background-color: chartreuse;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li class = "first" id = "fifo"><a href = "FIFO.html">FIFO</a></li>
+            <li class = "first" id = "optimal"><a href = "optimal.html">Optimal</a></li>
+            <li class = "first" id = "lru"><a href = "LRU.html">LRU</a></li>
+        </ul>
+     </nav>
+     <p class = "first">
+        The <b>page replacement algorithm </b>decides which memory page is to be replaced. The process of replacement 
+        is sometimes called swap out or write to disk. Page replacement is done when the requested page is not
+        found in the main memory (page fault).There are two main aspects of virtual memory, Frame allocation
+        and Page Replacement. It is very important to have the optimal frame allocation and page replacement
+        algorithm. Frame allocation is all about how many frames are to be allocated to the process while
+        the page replacement is all about determining the page number which needs to be replaced in order
+        to make space for the requested page.
+     </p>
+     <div class = "B">
+        <div class = "A">
+            <div class = "a"><br>
+                <b>PAGE FAULT : </b>Page faults dominate more like an error. A page fault will happen if a program 
+                tries <br>to access a piece of memory that does not exist in physical memory (main memory).
+                The fault<br> specifies the operating system to trace all data into virtual memory management
+                and then relocate <br>it from secondary memory to its primary memory, such as a hard disk.A
+                page fault trap occurs<br> if therequested page is not loaded into memory. The page fault
+                primarily causes an exception,<br> which is  used to notify the operating system to retrieve 
+                the "pages" from virtual memory to continue<br> operation. Once all of the data has been
+                placed into physical memory, the program resumes normal operation. 
+            </div>
+            <div class = "b"> 
+                <img src = "pr8.png" height="absolute">
+            </div>
+            <div class = "c">
+                <b>PAGE HIT :</b> When the CPU attempts to obtain a needed page from main memory 
+                and the page exists<br> in main memory (RAM), it is referred to as a "PAGE HIT". When we
+                 want to load the page on the memory,<br> and the page is already available on memory, then 
+                 it is called page hit.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

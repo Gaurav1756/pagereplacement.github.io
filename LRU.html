@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRU</title>
+</head>
+<style>
+    form {
+        background-color: limegreen;
+    }
+</style>
+<body>
+    <h1 align = "center">LRU page replacement algorithm</h1>
+    <P>
+        This algorithm replaces the page which has not been referred for a long time. This algorithm is 
+        just opposite to the optimal page replacement algorithm. The LRU stands for the Least Recently Used.
+         It keeps track of page usage in the memory over a short period of time. It works on the concept 
+         that pages that have been highly used in the past are likely to be significantly used again in the
+          future. It removes the page that has not been utilized in the memory for the longest time. 
+          LRU is the most widely used algorithm because it provides fewer page faults than the other methods.
+    <form>
+        Number of Frames :<br>
+        <input type = "text"><br>
+        Page request Order: <br>
+        <input type = "text"><br><br>
+        <a href = "lru1.html"><button type = "button">PageHit</button></a><br><br>
+        <a href = "lru1.html"><button type = "button">PageFault</button></a><br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFO</title>
+</head>
+<style>
+    form {
+        background-color: coral;
+    }
+</style>
+<body>
+    <h1 align = "center">FIFO page replacement algorithm</h1>
+    <P>
+        This is the simplest page replacement algorithm. In this algorithm, the operating system keeps track
+         of all pages in the memory in a queue, the oldest page is in the front of the queue. When a page 
+         needs to be replaced page in the front of the queue is selected for removal. 
+    </P>
+    <form>
+        Number of Frames :<br>
+        <input type = "text"><br>
+        Page request Order: <br>
+        <input type = "text"><br><br>
+        <a href = "fifo1.html"><button type = "button">PageHit</button></a><br><br>
+        <a href = "fifo1.html"><button type = "button">PageFault</button></a><br>
+    </form>
+</body>
+</html>
